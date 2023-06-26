@@ -33,6 +33,7 @@ Isso iniciará os três containers e os exporá em suas respectivas portas. Voc�
 
 - MongoDB: `localhost:27017`
 - PostgreSQL: `localhost:5432`
+- RabbitMQ: `localhost:5672`
 - Interface de gerenciamento do RabbitMQ: `localhost:15672`
 
 3. Para parar e remover os contêineres, execute o seguinte comando:
