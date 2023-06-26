@@ -53,7 +53,6 @@ Para usar este arquivo Docker Compose, execute o seguinte comando a partir do di
 
 ```console
 foo@bar:~$ docker-compose up -d
-foo
 ```
 
 Isso iniciará os três containers e os exporá em suas respectivas portas. Você pode então se conectar aos containers MongoDB, PostgreSQL e RabbitMQ usando os seguintes endereços:
