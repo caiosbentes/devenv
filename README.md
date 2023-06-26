@@ -18,7 +18,7 @@ Estas instruções ajudarão você a iniciar o projeto em sua máquina local.
 
 ### Configuração
 
-Modifique as variáveis de ambiente no arquivo `docker-compose.yml`, se necessário.
+Modifique as variáveis de ambiente no arquivo `variables.env`, se necessário.
 
 ### Uso
 
