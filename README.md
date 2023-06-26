@@ -1,4 +1,47 @@
-# Arquivo Docker Compose para MongoDB, PostgreSQL e RabbitMQ
+# Compose para MongoDB, PostgreSQL e RabbitMQ
+
+Descreva brevemente o seu projeto aqui.
+
+## Pré-requisitos
+
+- Docker
+- Docker Compose
+
+## Primeiros Passos
+
+Estas instruções ajudarão você a iniciar o projeto em sua máquina local.
+
+### Instalação
+
+1. Clone o repositório.
+2. Navegue até o diretório do projeto.
+
+### Configuração
+
+Modifique as variáveis de ambiente no arquivo `docker-compose.yml`, se necessário.
+
+### Uso
+
+1. Abra um terminal.
+2. Execute o seguinte comando para iniciar os serviços:
+
+```bash
+docker-compose up -d
+```
+
+Isso iniciará os três containers e os exporá em suas respectivas portas. Você pode então se conectar aos containers MongoDB, PostgreSQL e RabbitMQ usando os seguintes endereços:
+
+- MongoDB: `localhost:27017`
+- PostgreSQL: `localhost:5432`
+- Interface de gerenciamento do RabbitMQ: `localhost:15672`
+
+3. Para parar e remover os contêineres, execute o seguinte comando:
+
+```bash
+docker-compose down
+```
+
+### Serviços
 
 Este arquivo Docker Compose criará três containers:
 
@@ -48,15 +91,3 @@ Este arquivo Docker Compose criará três containers:
 - Volume montado:
   - Hospedeiro: rabbitmq_data
   - Container: /var/lib/rabbitmq
-
-Para usar este arquivo Docker Compose, execute o seguinte comando a partir do diretório:
-
-```console
-docker-compose up -d
-```
-
-Isso iniciará os três containers e os exporá em suas respectivas portas. Você pode então se conectar aos containers MongoDB, PostgreSQL e RabbitMQ usando os seguintes endereços:
-
-- MongoDB: `localhost:27017`
-- PostgreSQL: `localhost:5432`
-- Interface de gerenciamento do RabbitMQ: `localhost:15672`
