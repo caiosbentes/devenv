@@ -73,7 +73,7 @@ Este arquivo Docker Compose criará três containers:
 - Variáveis de ambiente:
   - POSTGRES_USER: [nome_do_usuário_do_banco_de_dados]
   - POSTGRES_PASSWORD: [senha_do_usuário_do_banco_de_dados]
-  - POSTGRES_DB: [nome_do_banco_de_dados]
+  - POSTGRES_MULTIPLE_DATABASES: [nome_do_banco_de_dados]
 - Volume montado:
   - Hospedeiro: postgres_data
   - Container: /var/lib/postgresql/data
