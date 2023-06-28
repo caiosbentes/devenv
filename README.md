@@ -47,10 +47,15 @@ The three services are connected to a network called app-network. This allows th
 
 ### Troubleshooting
 If you have any problems running the project, you can check the logs for the individual services. To do this, run the following commands:
-
+```bash
 docker-compose logs mongodb
+```
+```bash
 docker-compose logs postgres
+```
+```bash
 docker-compose logs rabbitmq3
+```
 
 ### Serviços
 
