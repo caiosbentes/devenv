@@ -39,7 +39,7 @@ Isso iniciará os três containers e os exporá em suas respectivas portas. Voc�
 3. Para parar e remover os contêineres, execute o seguinte comando:
 
 ```bash
-docker-compose down
+docker-compose down && docker volume prune -f
 ```
 
 ### Serviços
