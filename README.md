@@ -42,6 +42,16 @@ Isso iniciará os três containers e os exporá em suas respectivas portas. Voc�
 docker-compose down && docker volume prune -f
 ```
 
+### Networking
+The three services are connected to a network called app-network. This allows them to communicate with each other without having to expose their ports to the outside world.
+
+### Troubleshooting
+If you have any problems running the project, you can check the logs for the individual services. To do this, run the following commands:
+
+docker-compose logs mongodb
+docker-compose logs postgres
+docker-compose logs rabbitmq3
+
 ### Serviços
 
 Este arquivo Docker Compose criará três containers:
@@ -92,3 +102,4 @@ Este arquivo Docker Compose criará três containers:
 - Volume montado:
   - Hospedeiro: rabbitmq_data
   - Container: /var/lib/rabbitmq
+
